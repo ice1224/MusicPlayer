@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lab4kobiela.musicplayer.PlayerActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonPlayPause"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="22.5dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/button_pause" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRewBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_toLeftOf="@id/imageButtonPlayPause"
+        android:layout_toStartOf="@id/imageButtonPlayPause"
+        app:srcCompat="@drawable/button_rewbackward" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPrevious"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="37.5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        app:srcCompat="@drawable/button_previous"
+        android:layout_below="@id/textViewTitle"
+        android:layout_toLeftOf="@+id/imageButtonRewBack"
+        android:layout_toStartOf="@+id/imageButtonRewBack" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRewForw"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_toRightOf="@id/imageButtonPlayPause"
+        android:layout_toEndOf="@id/imageButtonPlayPause"
+        app:srcCompat="@drawable/button_rewforward" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="37.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/button_next"
+        android:layout_below="@id/textViewTitle"
+        android:layout_toRightOf="@+id/imageButtonRewForw"
+        android:layout_toEndOf="@+id/imageButtonRewForw" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonPlayPause"
+        android:layout_marginTop="22dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+
+</RelativeLayout>
+</ScrollView>
